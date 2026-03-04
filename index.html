@@ -1,1 +1,43 @@
+<!DOCTYPE html>
 
+<html lang="en">
+
+<head> 
+    <title> Embed Systems Photon LED </title>
+    <linkhref = "assetts/style.css" rel="stylesheet" />
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <p = "text-align: center;" > LED Control Panel</p>
+    <form action = "https:api.particle.io/v1/devices/0a10aced202194944a05a6b0/led" method="POST">
+        <input type="hidden" name="access_token"
+        value = "6893d92d5ecc0617253ef059d0d3a8669fed2bd0">
+
+    </form>
+
+    <p = "text-align: center;" > input type = "radio" name = "arg" value = "on1">
+        Turn LED1 on.</p>
+    <p = "text-align: center;" > input type = "radio" name = "arg" value = "off1">
+    Turn LED1 off.</p>
+
+
+    <p = "text-align: center;" > input type = "radio" name = "arg" value = "on2">
+        Turn LED2 on.</p>
+    <p = "text-align: center;" > input type = "radio" name = "arg" value = "off2">
+    Turn LED2 off.</p>
+
+
+    <p = "text-align: center;" > input type = "radio" name = "arg" value = "on3">
+        Turn LED3 on.</p>
+    <p = "text-align: center;" > input type = "radio" name = "arg" value = "off3">
+    Turn LED3 off.</p>
+
+
+    <p = "text-align: center;" > input type = "submit" style="background:green" name = "arg" value = "Activate"></p>
+
+
+
+</form>
+</body>
+</html>
